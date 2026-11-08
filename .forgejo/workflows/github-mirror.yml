@@ -23,7 +23,7 @@ jobs:
           persist-credentials: false
 
       - name: Mirror main
-        uses: https://forgejo.schryborg.de/luke/github-morror-action@v1
+        uses: https://forgejo.schryborg.de/luke/github-mirror-action@v1
         with:
           github-repository: ${{ vars.MIRROR_REPO }}
           github-token: ${{ secrets.MIRROR_TOKEN }}
